@@ -28,13 +28,13 @@ console.log(result.groups); // { year: "2019", month: "08", day: "23" }
 
 
 // RegExp named groups and .replace():
-const str = 'Kavalchuk Yauhen';
+const str = 'Dmitriy Yakovlev';
 
 const repl = /(?<firstName>[A-Za-z]+) (?<lastName>[A-Za-z]+$)/u;
 
 const newStr = str.replace(repl, '$<lastName>, $<firstName>');
 
-console.log(newStr); // "Yauhen, Kavalchuk"
+console.log(newStr); // "Dmitriy, Yakovlev"
 
 
 // Using named groups inside RegExp - \k<group name>:
